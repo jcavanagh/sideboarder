@@ -43,17 +43,17 @@ compileTestKotlin {
 	}
 }
 
-import org.gradle.internal.os.OperatingSystem
+//import org.gradle.internal.os.OperatingSystem
+//
+//task uiBuild {
+//	exec {
+//		def commands = ['npm', 'run', 'build']
+//		if(OperatingSystem.current().isWindows()) {
+//			commands = ['cmd', '/c'] + commands
+//		}
+//		workingDir './ui'
+//		commandLine commands
+//	}
+//}
 
-task uiBuild {
-	exec {
-		def commands = ['npm', 'run', 'build']
-		if(OperatingSystem.current().isWindows()) {
-			commands = ['cmd', '/c'] + commands
-		}
-		workingDir './ui'
-		commandLine commands
-	}
-}
-
-defaultTasks "uiBuild", "bootRun"
+defaultTasks "bootRun"
