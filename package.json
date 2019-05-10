@@ -1,8 +1,0 @@
-{
-  "name": "sideboarder",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "build": "cd ui && npm i && npm run build"
-  }
-}
